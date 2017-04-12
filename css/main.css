@@ -12,9 +12,15 @@
 
 html {
     color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.65;
 }
+
+body {
+    font-size: 12pt !important;
+
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -99,6 +105,8 @@ textarea {
     max-height: 90px;
 }
 
+
+
 .navbar-nav > li > a {
     padding-top: 44px !important;
     padding-bottom: 44px !important;
@@ -120,6 +128,41 @@ header {
 #home {
     margin-top: 100px;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+section {
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.col-bottom {
+    padding-bottom: 20px;
+}
+
+.col-fluid {
+    padding: 0px !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.bottom-links a {
+    padding: 0.4em;
+}
+
+
+ @media (max-width: 800px) {
+    .logo {
+        max-height: 40px;
+    }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
