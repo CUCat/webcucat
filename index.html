@@ -313,7 +313,19 @@
 <script src="js/plugins.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+  var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+  else window.addEventListener('load', loadDeferredStyles);
+</script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {
@@ -328,7 +340,7 @@
         e.src = 'https://www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('create', 'UA-97338269-1', 'auto');
     ga('send', 'pageview');
 </script>
 </body>
