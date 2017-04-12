@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Gerard Casas Saez -- Main developer -- @casassaez
+    Alexandre Cortiella -- Content and image editor -- |
 
 # THANKS
 
-    <name>
+    Colorado University Boulder, Balsells foundation
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Bootstrap, jQuery, Modernizr, Normalize.css
